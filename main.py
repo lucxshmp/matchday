@@ -4,7 +4,7 @@ from planilhas import LerPlanilhas
 import pandas as pd
 from dash import Dash
 from app import DashApp
-
+import os
 
 def main():
     # Criar conexão com o banco de dados
@@ -44,7 +44,8 @@ def main():
 
     mapa = grafico1.criarMapa(df_mapa)
     grafico1.app.layout = layoutgrafico1
-    grafico1.app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    grafico1.app.run(host="0.0.0.0", port=port, debug=False)
     
     
 
