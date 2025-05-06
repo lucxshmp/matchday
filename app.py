@@ -40,9 +40,9 @@ class DashApp:
 
         fig.update_layout(
             mapbox_style="carto-positron",
-            mapbox_zoom=5.5,
+            mapbox_zoom=5.2,
             mapbox_center={"lat": -18.5, "lon": -44},
-            margin={"r":0,"t":0,"l":0,"b":0},
+            mmargin={"r": 10, "t": 10, "l": 10, "b": 10},
             height=500
         )
 
