@@ -42,7 +42,7 @@ class DashApp:
             mapbox_style="carto-positron",
             mapbox_zoom=5.2,
             mapbox_center={"lat": -18.5, "lon": -44},
-            mmargin={"r": 10, "t": 10, "l": 10, "b": 10},
+            margin={"r": 10, "t": 10, "l": 10, "b": 10},
             height=500
         )
 
